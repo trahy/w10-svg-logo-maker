@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shapes = require('./lib/generateLogo')
-
+const generateLogo = require('./lib/generateLogo');
 
 
 // array of questions for user input
@@ -31,8 +30,8 @@ inquirer
 
   ])
   .then((data) => {
-    const readmeContent = shapes(data);
-    fs.writeFile('./examples/logo.svg', readmeContent, (err) =>
+    const logoContent = generateLogo(data);
+    fs.writeFile('./examples/logo.svg', logoContent, (err) =>
     err ? console.error(err) : console.log('The logo has been successfully created!')
     );
   });

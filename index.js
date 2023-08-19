@@ -1,23 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shapes = require('./lib/shapes')
+const shapes = require('./lib/generateLogo')
 
-// class Svg{
-//     constructor(){
-//         this.logoText = ''
-//         this.logoShape = ''
-//     }
 
-//     render(){
-//         return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="250" height="250">${this.logoShape}${this.logoText}</svg>`
-//     }
-//     setTextElement(text,color){
-//         this.textElement = `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${shapeColor}">${ShapeText}</text>`
-//     }
-//     setShapeElement(shape){
-//         this.shapeElement = shape.render()
-//     }
-// };
 
 // array of questions for user input
 inquirer

@@ -24,7 +24,9 @@ This is a command-line application which generates a simple logo based on a user
 Below are examples of logos generated from this application.
 
 ![example of circle logo](examples/Example1.svg)
+
 ![example of triangle logo](examples/Example2.svg)
+
 ![example of square logo](examples/Example3.svg)
 
 
